@@ -1,0 +1,16 @@
+data = []
+
+while True:
+    print("\n1.Add  2.View  3.Exit")
+    choice = int(input("Enter choice: "))
+
+    if choice == 1:
+        item = input("Enter item: ")
+        data.append(item)
+        print("Item added")
+    elif choice == 2:
+        print("Items:", data)
+    elif choice == 3:
+        break
+    else:
+        print("Invalid choice")
