@@ -1,0 +1,9 @@
+numbers = []
+
+print("Enter 5 numbers")
+for i in range(5):
+    num = int(input(f"Number {i+1}: "))
+    numbers.append(num)
+
+numbers.sort()
+print("Sorted numbers:", numbers)
