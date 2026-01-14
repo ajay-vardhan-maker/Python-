@@ -1,0 +1,9 @@
+student = {}
+
+student["name"] = input("Enter name: ")
+student["roll"] = input("Enter roll number: ")
+student["branch"] = input("Enter branch: ")
+
+print("\nStudent Details")
+for key, value in student.items():
+    print(key, ":", value)
