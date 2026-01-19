@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class GuessingGame {
+    public static void main(String[] args) {
+        Random random = new Random();
+        int number = random.nextInt(10) + 1; // Random number between 1 and 10
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Guess a number between 1 and 10: ");
+        int guess = scanner.nextInt();
+
+        if (guess == number) {
+            System.out.println("Congratulations! You guessed it right!");
+        } else {
+            System.out.println("Sorry, the number was " + number + ". Try again!");
+        }
+
+        scanner.close();
+    }
+}
